@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <title>SE7E Experience | Di Ferrero</title>
+
+  <link rel="stylesheet" href="./style.css">
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600;800;900&family=Poppins:wght@300;400;600;700&display=swap"
+    rel="stylesheet"
+  >
+
+</head>
+
+<body>
+
+  <canvas id="particles"></canvas>
+
+  <!-- INTRO -->
+
+  <div class="intro-screen" id="introScreen">
+
+    <div class="logo-text">
+      di ferrero
+    </div>
+
+    <h1>
+      SE7E Experience
+    </h1>
+
+    <p>
+      Entre no universo azul do novo álbum.
+    </p>
+
+    <button id="enterBtn">
+      Entrar na experiência
+    </button>
+
+  </div>
+
+  <!-- MÚSICA -->
+
+  <audio id="bgMusic" loop preload="auto">
+
+    <source
+      src="./assests/azul.mp3"
+      type="audio/mpeg"
+    >
+
+  </audio>
+
+  <!-- HEADER -->
+
+  <header class="header">
+
+    <a href="#home" class="logo-text small">
+      di ferrero
+    </a>
+
+    <nav>
+
+      <a href="#album">
+        Álbum
+      </a>
+
+      <a href="#tracks">
+        Faixas
+      </a>
+
+      <a href="#shows">
+        Shows
+      </a>
+
+      <a href="#listen">
+        Streaming
+      </a>
+
+    </nav>
+
+    <button class="music-btn" id="musicBtn">
+      Tocar música
+    </button>
+
+  </header>
+
+  <!-- HERO -->
+
+  <section id="home" class="hero">
+
+    <div class="stars"></div>
+
+    <div class="planet planet-1"></div>
+    <div class="planet planet-2"></div>
+    <div class="planet planet-3"></div>
+
+    <div class="overlay"></div>
+
+    <div class="hero-content">
+
+      <span class="tag">
+        NOVO ÁLBUM DE DI FERRERO
+      </span>
+
+      <h1>
+        SE7E<br>
+        Experience
+      </h1>
+
+      <p>
+        Uma experiência visual inspirada no novo ciclo artístico
+        de Di Ferrero: azul profundo, universo paralelo,
+        transição, palco e recomeço.
+      </p>
+
+      <div class="hero-buttons">
+
+        <a href="#listen" class="btn primary">
+          Ouvir agora
+        </a>
+
+        <a href="#tracks" class="btn secondary">
+          Ver faixas
+        </a>
+
+      </div>
+
+    </div>
+
+    <!-- CAPA -->
+
+    <div class="artist-frame" id="albumCard">
+
+      <img
+        src="./assests/albumse7e.jpg"
+        alt="Álbum SE7E"
+      >
+
+      <div class="artist-badge">
+        SE7E
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- SOBRE -->
+
+  <section id="album" class="section">
+
+    <span class="section-tag">
+      SOBRE O ÁLBUM
+    </span>
+
+    <h2>
+      Entre o claro e o escuro
+    </h2>
+
+    <p>
+      SE7E representa um momento de transição:
+      aquele instante em que a tarde termina,
+      a noite ainda não chegou e o céu ganha
+      um tom azul profundo. Um projeto que mistura
+      emoção, memória, recomeço e uma atmosfera
+      quase cósmica.
+    </p>
+
+  </section>
+
+  <!-- TRACKLIST -->
+
+  <section id="tracks" class="section dark">
+
+    <span class="section-tag">
+      TRACKLIST
+    </span>
+
+    <h2>
+      Faixas do projeto
+    </h2>
+
+    <div class="tracks-grid">
+
+      <div class="track-card">
+        <span>01</span>
+        <h3>Intro Se7e</h3>
+        <p>A abertura da jornada.</p>
+      </div>
+
+      <div class="track-card">
+        <span>02</span>
+        <h3>Universo Paralelo</h3>
+        <p>Uma viagem emocional e intensa.</p>
+      </div>
+
+      <div class="track-card">
+        <span>03</span>
+        <h3>Deixa Sonhar</h3>
+        <p>Feat. Jenni Mosello.</p>
+      </div>
+
+      <div class="track-card destaque">
+        <span>04</span>
+        <h3>Azul (Oceano)</h3>
+        <p>Feat. Matheus Asato e Gee Rocha.</p>
+      </div>
+
+      <div class="track-card">
+        <span>05</span>
+        <h3>Unfollow</h3>
+        <p>Desapego em forma de música.</p>
+      </div>
+
+      <div class="track-card">
+        <span>06</span>
+        <h3>Além do Fim</h3>
+        <p>Recomeço depois do caos.</p>
+      </div>
+
+      <div class="track-card">
+        <span>07</span>
+        <h3>Fim do Mundo</h3>
+        <p>Escapismo e reconstrução pessoal.</p>
+      </div>
+
+      <div class="track-card">
+        <span>08</span>
+        <h3>Cuida</h3>
+        <p>Afeto e vulnerabilidade.</p>
+      </div>
+
+      <div class="track-card">
+        <span>09</span>
+        <h3>Som da Desilusão</h3>
+        <p>Intensidade e sentimento.</p>
+      </div>
+
+      <div class="track-card">
+        <span>10</span>
+        <h3>SE7E</h3>
+        <p>Encerramento do conceito visual e sonoro.</p>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- SHOWS -->
+
+  <section id="shows" class="section shows">
+
+    <span class="section-tag">
+      TURNÊ SE7E
+    </span>
+
+    <h2>
+      Próximos shows
+    </h2>
+
+    <div class="shows-grid">
+
+      <div class="show-card">
+        <span>09 Maio 2026</span>
+        <h3>São Paulo</h3>
+        <p>Teatro Bradesco</p>
+      </div>
+
+      <div class="show-card">
+        <span>27 Maio 2026</span>
+        <h3>Porto</h3>
+        <p>Auditório CCOP</p>
+      </div>
+
+      <div class="show-card">
+        <span>28 Maio 2026</span>
+        <h3>Lisboa</h3>
+        <p>Casa Capitão</p>
+      </div>
+
+      <div class="show-card">
+        <span>25 Julho 2026</span>
+        <h3>Brasília</h3>
+        <p>Capital Moto Week</p>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- STREAMING -->
+
+  <section id="listen" class="section listen">
+
+    <span class="section-tag">
+      STREAMING
+    </span>
+
+    <h2>
+      Ouça SE7E
+    </h2>
+
+    <p>
+      Disponível nas principais plataformas digitais.
+    </p>
+
+    <div class="listen-buttons">
+
+      <a
+        href="https://open.spotify.com/album/5PTpgnRIjhygJOwKf324o1"
+        target="_blank"
+        class="btn primary"
+      >
+        Spotify
+      </a>
+
+      <a
+        href="https://music.youtube.com/browse/MPREb_ZTmyR0GSWJ1"
+        target="_blank"
+        class="btn secondary"
+      >
+        YouTube Music
+      </a>
+
+      <a
+        href="https://music.apple.com/br/album/se7e/6770602546"
+        target="_blank"
+        class="btn secondary"
+      >
+        Apple Music
+      </a>
+
+    </div>
+
+  </section>
+
+  <!-- FOOTER -->
+
+  <footer>
+
+    <div class="logo-text footer-logo">
+      di ferrero
+    </div>
+
+    <p>
+      Projeto fan-made inspirado no álbum SE7E
+    </p>
+
+    <p class="dev-name">
+      Desenvolvido por Anicely —
+      A MAIOR FÃ DESTE HOMEM NA TERRA 💙
+    </p>
+
+  </footer>
+
+  <!-- PLAYER -->
+
+  <div class="mini-player" id="miniPlayer">
+
+    <div class="player-cover">
+
+      <img
+        src="./assests/albumse7e.jpg"
+        alt="SE7E"
+      >
+
+    </div>
+
+    <div class="player-info">
+
+      <strong>
+        Azul (Oceano)
+      </strong>
+
+      <span>
+        Di Ferrero
+      </span>
+
+      <div class="progress">
+        <div class="progress-bar" id="progressBar"></div>
+      </div>
+
+    </div>
+
+    <button id="playerBtn">
+      ▶
+    </button>
+
+  </div>
+
+  <button id="topBtn" class="top-btn">
+    ↑
+  </button>
+
+  <script src="./script.js"></script>
+
+</body>
+</html>
